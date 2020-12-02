@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: rgb(208, 255, 239);
 }
 
@@ -15,13 +16,13 @@ body {
   display: grid;
   grid-template-areas: 'verde vermelho'
   'amarelo azul';
-  grid-gap: 10px;
-  border: 1px solid #fff;
-  background-color: #fff;
+  grid-gap: 30px;
+  border: 30px solid #000;
+  background-color: #000;
   border-radius: 100%;
-  margin-top: 20%;
-  width: 700px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
+  position: relative;
 }
 
 .blue {
@@ -43,6 +44,21 @@ body {
   grid-area: verde;
   background-color: green;
   border-top-left-radius: 100%;
+}
+
+.iniciar {
+  position: absolute;
+  /* display: flex; */
+  top: 29%;
+  right: 29%;
+  cursor: pointer;
+}
+
+.iniciar img {
+  width: 200px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: 10px solid #000;
 }
 
 .selected {
